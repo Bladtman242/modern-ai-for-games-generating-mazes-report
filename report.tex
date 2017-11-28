@@ -1,0 +1,60 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\usepackage[pdftex]{graphicx}
+\ifCLASSOPTIONcompsoc
+  % IEEE Computer Society needs nocompress option
+  % requires cite.sty v4.0 or later (November 2003)
+  \usepackage[nocompress]{cite}
+\else
+  % normal IEEE
+  \usepackage{cite}
+\fi
+\ifCLASSINFOpdf
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../pdf/}{../jpeg/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+\else
+  % or other class option (dvipsone, dvipdf, if not using dvips). graphicx
+  % will default to the driver specified in the system graphics.cfg if no
+  % driver is specified.
+  % \usepackage[dvips]{graphicx}
+  % declare the path(s) where your graphic files are
+  % \graphicspath{{../eps/}}
+  % and their extensions so you won't have to specify these with
+  % every instance of \includegraphics
+  % \DeclareGraphicsExtensions{.eps}
+\fi
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+\title{Procedural Maze-generation}
+\author{\IEEEauthorblockN{Sigurt Bladt Dinesen}
+\IEEEauthorblockA{IT University of Copenhagen\\
+sidi@itu.dk}
+}
+\maketitle
+\IEEEpeerreviewmaketitle
+\input{introduction.tex}
+
+\input{background.tex}
+
+\input{mechanics.tex}
+
+\input{methods.tex}
+
+\input{results.tex}
+
+\input{discussion.tex}
+
+7. References
+You need to include at least 10 references, of which at least 5 should be
+academic papers. The formatting of the references should follow any of the
+standard academic reference formats.
+
+\begin{thebibliography}{1}
+\bibitem{browne}
+Some guy, some other guy, third guy, \emph{Brilliant study title} 1900+hvidkål
+\end{thebibliography}
+
+\end{document}
