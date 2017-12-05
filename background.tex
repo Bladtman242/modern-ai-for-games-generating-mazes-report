@@ -49,12 +49,26 @@ The problem for the designer then becomes to define the criteria that the evolut
 
 \subsection{Graph Theory}
 
-The environment that the algorithm produces is defined
+The environment that the algorithm produces is defined as a graph, so we based our basic criteria on graph theory. Not all of these are necesarily used, but rather depend on the specific style of environment that should be generated.
+
+The most basic metrics that we extract are the cardinality of the graph, which allow us to directly specify the size of the environment, and the average degree of the nodes, which allow us to evaluate how tightly connected the graph should be.
+
+\subsubsection{Cycles and trees}
+
+The metric that may have the most impact on overall structure are the number of cycles, and inversely the subtrees that are the parts of the graph not in any cycle.
+
+Fewer cycles will result in more nodes being branches in the environment, which can either be desirable or not depending on the game design. It is worth noting that no cycles can result in backtracking and also leaves no escape if the game involves getting chase.
+
+The branches of level are usually a key part of the level design, where keys or puzzles are placed at the end of. Exception exists, such as Pacman, which level exist entirely of cycles. We also want to distinquish between the individual dead ends and the entire subtree which the player can perceive as a dead end as a whole. Each individual dead end is a tree with no branches and one leaf node. These can also be referred to as cul-de-sacs.
 
 \subsubsection{Cops and Robbers Graphs}
 
-\cite{AIGNER19841}
+To further describe the connectivity of the environment we base another criteria on a theorem M. Aigner and M. Fromme \cite{AIGNER19841}, which involves a game of one agent chasing another. In short any graph can be reduced to determine whether or not one agent can catch another by moving along edges in a non-weighted graph, by removing nodes that are pitfalls.
+
+Pitfalls are nodes where all the neighboring nodes are connected to any other single node, referred to as an attack node. If the chaser is standing on the attack node and the chasee is standing on the pitfall, the chaser can catch the chasee. 
+
+Counting these pitfalls are then a useful metric in determining how easily you can traverse the enviroment.
 
 \subsection{Spelunky}
 
-\cite{spelunky book}
+TODO \cite{spelunky book}
