@@ -1,12 +1,60 @@
 \section{Background}
-Has this been done before? How? If not, what's the closest related research?
-(Both using similar approaches and other algorithms.) What's novel with your
-research?
+%Has this been done before? How? If not, what's the closest related research? (Both using similar approaches and other algorithms.) What's novel with your research?
+
+This section provides an overview of the existing methods on which our approach is based.
+
+\subsection{Maze Definition}
+
+The lattice grammars work on a very specific type of graph based maze. For the purpose of this paper we define two types of maze definitions: block-based mazes and wall-based mazes.
+
+Block-based mazes are arrays of cells, which are either walls or not. All the non-wall cells are typically traversible, so a graph of the level would be defined where each cell is a node which has edges to its neighboring cells that are not walls.
+
+Wall-based mazes look like an array of cells, but rather than the walls taking up an entire cell, they are between each cell. Cells no longer have a state, so the maze is defined as an array of cells, and a set of walls between them.
+
+The lattice grammars work on wall-based mazes, because it is based on graph grammars and the wall-based mazes are defined similarly to graphs. The two are therefore a natural fit.
 
 \subsection{L-Systems}
 
-\subsection{Cellular Automata}
+L-systems are a method with a broad range of applications. It was first concieved to model simple cells, but is commonly used for trees and plants. They are formally defined as a tuple including the alphabet, the initial state, and the set of rules that can be applied. Rules are then defined as a tuple of three things; a predecessor, a condition, and a successor \cite{Prusinkiewicz96l-systems}. In short you iteratively apply the rules to the state, by replacing the predecessor with the succesor when the condition is met.
+
+The lattice grammars work similarly to this, but are by nature restricted in their alphabet. The most essential difference is that rather than applying rules to strings, they apply them to a lattice. Additionally rules are applied arbitrarily one by one. These two differences allow us to model more variety, because we are not restricted to a tree structure. By picking rules pseudo-randomly there are more possible results, as the order in which rules are applied matter.
 
 \subsection{Graph Grammars}
 
+Because the lattice is treated like a graph rather than a string, the lattice grammars are very related to graph grammars.
+
+Graph grammars are defined similarly to L-Systems as an alphabet, but this this time of labels, an initial state, and a set of productions \cite{4569741}. In practice, productions work similarly to rules in L-Systems, but can both add and remove edges and nodes from a graph.
+
+Graph grammars are a powerful tool for generating environments \cite{youtube video, book}, but they lack a sense of space, and so need an additional step to layout the nodes and transform them into what they really represent. The lattice grammars are layed out in a lattice by nature and so generate the environment based on its spatial representation rather than just its symbols.
+
+Lattice grammars do however lack the strucural expressiveness of graph grammars. When using graph grammars, they are commonly used to generate only the symbolic structure of the environment, as in how everything connects to each other. Lattice grammars loose this broad overview, although it could possibly still exist with the set of rules.
+
+
+\subsection{Cellular Automata}
+
+Tying lattice grammars to the space makes them related to cellular automata. Cellular automata are a simple mathematical construct that works on an array or lattice of cell that can be in either of two states \cite{WOLFRAM19841}. The rules that transform the states change the state of each cell depending on the state of neighbouring cells. The rules can be defined for each pattern of neighbors, but a definition where simply the count of the neighboring states determines the new state of the cell has been popularized by Conway's Game of Life \cite{gardner1970mathematical}.
+
+Unlike cellular automata, lattice grammars do not apply rules based on just neighbors but on larger patterns in the graph, and the rules are applied one by one, rather than all at once in each iteration. Similarly to cellular automata, lattice grammars uses the specific position of neighbors to generate the new state of the environment. Simple rules can also create chaotic and unpredictable results, if not controlled by another mechanism.
+
+\subsection{Evolution}
+
+On top of the rule application algorithm, we use an evolutionary algorithm to generate rules that generate environments that fit certain criteria. This is to alleviate some of the problems that comes from the algorithm, that were mentioned briefly in the earlier sections.
+
+It is desireable to be able to control the overall structure of the environment, but the rules needed to for this level of control can be complicated to design with the introduction of spatial restrictions. 
+The evolutionary algorithm may then generate the rules procedurally as long as a criteria can be defined to evaluate the environment.
+
+This can also solve the problem with chaotic results, because limits can be applied and we can define a criteria that the environment should be of a certain size, which will constrain the algorithm, while it can still generate interesting patterns.
+
+The problem for the designer then becomes to define the criteria that the evolutionary algorithm will generate environments based on.
+
+\subsection{Graph Theory}
+
+The environment that the algorithm produces is defined
+
+\subsubsection{Cops and Robbers Graphs}
+
+\cite{AIGNER19841}
+
 \subsection{Spelunky}
+
+\cite{spelunky book}
