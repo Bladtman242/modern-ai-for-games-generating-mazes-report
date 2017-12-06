@@ -71,4 +71,8 @@ Counting these pitfalls are then a useful metric in determining how easily you c
 
 \subsection{Spelunky}
 
-TODO \cite{yu2016spelunky}
+The final point of inspiration for the method is from the game "Spelunky". In his book, of the same name, on the development of the game, the creator, Derek Yu, describes in detail the underlying algorithm that generates the levels \cite{yu2016spelunky}. 
+
+Each level is composed of a 4 by 4 grid of "rooms", which in turn are made of tiles. To generate a level, two room positions are picked for an entrance and exit, and a path is drawn randomly between them. Any rooms not on the path are optional. To fill the level, each room is picked from a set of premade templates, such that the exits of the room match the path on which it is placed.
+
+This separation of the overall structure of the level and the detail of each room results in a great mix of authored- and procedural content. A similar approach can be used in conjunction with graph- or lattice grammars, to fill in the details that are not important to the overall structure of the environment \cite{79GraphG75:online}.
