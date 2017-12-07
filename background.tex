@@ -15,7 +15,7 @@ The lattice grammars work on wall-based mazes, because it is based on graph gram
 
 \subsection{L-Systems}
 
-L-systems are a method with a broad range of applications. It was first concieved to model simple cells, but is commonly used for trees and plants. They are formally defined as a tuple including the alphabet, the initial state, and the set of rules that can be applied. Rules are then defined as a tuple of three things; a predecessor, a condition, and a successor \cite{Prusinkiewicz96l-systems}. In short you iteratively apply the rules to the state, by replacing the predecessor with the succesor when the condition is met.
+L-systems are a method with a broad range of applications. It was first concieved to model simple cells, but is commonly used for trees and plants. They are formally defined as a tuple including the alphabet, the initial state, and the set of rules that can be applied. Rules are then defined as a tuple of three things; a predecessor, a condition, and a successor \cite{Prusinkiewicz96l-systems:from}. In short you iteratively apply the rules to the state, by replacing the predecessor with the succesor when the condition is met.
 
 The lattice grammars work similarly to this, but are by nature restricted in their alphabet. The most essential difference is that rather than applying rules to strings, they apply them to a lattice. Additionally rules are applied arbitrarily one by one. These two differences allow us to model more variety, because we are not restricted to a tree structure. By picking rules pseudo-randomly there are more possible results, as the order in which rules are applied matter.
 
