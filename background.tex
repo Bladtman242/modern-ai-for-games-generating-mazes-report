@@ -40,6 +40,18 @@ Unlike cellular automata, lattice grammars do not apply rules based on just neig
 
 On top of the rule application algorithm, we use an evolutionary algorithm to generate rules that generate environments that fit certain criteria. This is to alleviate some of the problems that comes from the algorithm, that were mentioned briefly in the earlier sections.
 
+An basic evolutionary algorithm works in a few simple steps \cite{holland1975adaptation}:
+\begin{itemize}
+\item An initial population is created.
+\item Until an termination criteria is met:
+\begin{itemize}
+    \item Randomly mutate the population
+    \item Evaluate the population
+    \item Select the best from the population to be parents for the next generation
+    \item Breed the parents to create a new population
+\end{itemize}
+\end{itemize}
+
 It is desireable to be able to control the overall structure of the environment, but the rules needed to for this level of control can be complicated to design with the introduction of spatial restrictions. 
 The evolutionary algorithm may then generate the rules procedurally as long as a criteria can be defined to evaluate the environment.
 
