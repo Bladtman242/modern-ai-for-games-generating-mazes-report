@@ -10,17 +10,20 @@ This section will go through a few examples of some common game mechanics and wh
 
 The first broad category we'll discuss is cops and robbers games. Some specific genres in this category are stealth, heist, and horror games, and some arcade games, such as Pacman, in which you have to avoid enemies while reaching your goal.
 
-some cul-de-sacs, low pitfalls, some cycles
+Some of the key metric in evaluating if a level is good for cops and robbers are: cul-de-sacs and cycles. The effect of each depends highly on the specific game mechanics, but in general we want cyclic levels with multiple cycles and a few dead ends to place objectives at.
+
+Cul-de-sacs are generally not encouraged, because they can easily guarantee a loss for the player if they are caught there. A few short dead ends are useful for placement of objectives or as red herrings. 
+
+Inversely cycles are an advantage for the player, as it ensures that they have an escape route. If the game has limited visibility, then cycles work even better because the player can still run into the cops if they don't know they're there.
 
 
 \subsection{Dungeon Crawlers}
 
-Examples:
-Zelda, Binding of Issac
+The second category we will work with is dungeon crawlers. Examples of these are the Zelda games, Binding of Issac, and Skyrim.
 
-Choke-points?, cul-de-sacs, few cycles
+The key metrics this time around are subtrees and choke-points. Dungeons typically have branching paths and few cycles. Any cycles are typically used for backtracking. Choke-points are edges in the graph that connect two otherwise separated components, and are important for objectives, such as locked doors and help make the dungeon more linear.
 
 
 \subsection{Theme and style}
 
-Symmetry? Visual things?
+There are a lot of features that are left to the theme and style of the game. Symmetry for example doesn't have a clear purpose other creating a specific style of maze.
