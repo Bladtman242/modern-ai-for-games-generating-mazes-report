@@ -83,6 +83,24 @@ The lattice describes the overall layout of the maze, but by considering the
 lattice's nodes as fixed-size rooms, we can decouple the details of the maze layout
 from the overall structure. Depending on the room-size, this stage can have
 a profound impact on the final result. The connectivity of the maze can be
-altered here, and the depth of cul-de-sacs can be decided. In fact, for large
-room sizes, cul-de-sacs can be difficult to discern visually on the lattice
+altered here, and the depth of cul-de-sacs can be decided. This stage has a
+large visual impact as well. For example; for large room sizes, cul-de-sacs can
+be difficult to discern visually on the lattice
 level, and may be noticed only at the room level.
+
+\subsection{Experiments}
+In order to meet the criteria described in section \ref{sec:mechanics}, we run
+several evolutionary experiments, with different fitness criteria.
+
+\subsubsection{Cops and Robbers}
+For games in the Cops and Robbers category, we try to evolve grammars that have
+few but some pitfalls, few cul-de-sacs and a small average travel distance
+between nodes. This should favour high-connectivity mazes with a few dead-ends,
+providing "don't think just run" levels, sprinkled with a few traps created by
+cul-de-sacs and pitfalls.
+
+\subsubsection{Dungeon Crawlers}
+For games in the Dungeon Crawler category, we try to evolve grammars that are
+rich in cul-de-sacs and large trees, with a comparatively low degree. This
+should favour mazes that consist of disjunct parts, and with "narrow" paths and
+choke-points.
