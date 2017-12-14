@@ -7,18 +7,18 @@
   legend pos=south east]
 
 %cops-run plot
-\addplot+[color=black,mark=*,mark options={fill=black}] table [y=best, x=G]{garun-cops-apply-limit30-100gen-properfitness};
+\addplot+[color=black,mark=square*,mark options={fill=black}] table [y=best, x=G]{garun-cops-apply-limit30-100gen-properfitness};
 \addlegendentry{Best fitness}
 
-\addplot+[color=black,mark=triangle,mark options={fill=green}] table [y=med, x=G]{garun-cops-apply-limit30-100gen-properfitness};
+\addplot+[color=black,mark=triangle*,mark options={fill=black}] table [y=med, x=G]{garun-cops-apply-limit30-100gen-properfitness};
 \addlegendentry{Median fitness}
 
 %dungeon-run plot
-\addplot+[color=red,mark=*,mark options={fill=red}] table [y=best,
+\addplot+[color=red,mark=square*,mark options={fill=red}] table [y=best,
 	x=G]{garun-dungeon-treesizeAndExpDegreeAndLogTreeCulRation-300popsize-again};
 \addlegendentry{Best fitness}
 
-\addplot+[color=red,mark=triangle,mark options={fill=red}] table [y=med,
+\addplot+[color=red,mark=triangle*,mark options={fill=red}] table [y=med,
 	x=G]{garun-dungeon-treesizeAndExpDegreeAndLogTreeCulRation-300popsize-again};
 \addlegendentry{Median fitness}
 
