@@ -21,9 +21,13 @@ Inversely cycles are an advantage for the player, as it ensures that they have a
 
 The second category we will work with is dungeon crawlers. Examples of these are the Zelda games, Binding of Issac, and Skyrim.
 
-The key metrics this time around are subtrees and choke-points. Dungeons typically have branching paths and few cycles. Any cycles are typically used for backtracking. Choke-points are edges in the graph that connect two otherwise separated components, and are important for objectives, such as locked doors and help make the dungeon more linear.
+The key metrics this time around are cycles and choke-points. Dungeons typically have branching paths and few cycles. Any cycles are typically used for backtracking. Choke-points  are important for placing objectives, such as locked doors and help make the dungeon more linear.
+
+Choke-points is a very important metric for dungeon crawlers, but with all the other metrics, that look for trees and dead-ends, which are similar to choke-points, it can easily be redundant. We define them as any edge in the graph that connect two otherwise separated components. To gain some performance we chose to hope that choke-points would arise from other metrics, especially cycles.
+
+Cycles will generally not improve a classical dungeon, since dungeons need a clear branching tree structure to allow for progression. We can easily detect how much of a graph is cycles by comparing the size of the subtrees in the graph to the overall size of the graph. Subtrees are by definition the inverse of the cycles in a graph, because any part of the graph that is not cyclic is a subtree or part of one.
 
 
 \subsection{Theme and style}
 
-There are a lot of features that are left to the theme and style of the game. Symmetry for example doesn't have a clear purpose other creating a specific style of maze.
+There are a lot of features that are left to the theme and style of the game. Symmetry for example doesn't have a clear purpose other creating a specific style of maze. Because the algorithm has no inherrent style of theme, and is not capable of showing such without extensions, we will simply disregard looking for symmetry, but acknowledge that it's possible to generate mazes that has it.
