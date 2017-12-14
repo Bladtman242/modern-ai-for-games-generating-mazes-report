@@ -1,5 +1,8 @@
 \section{Methods}
-First some definitions:
+
+This section will describe the specific method that we developed to generate lattice-grammars that generate environments.
+
+Before explaining the method we need to clear up some definitions:
 By \textit{lattice}, we mean a graph whose nodes are superimposed on a
 (potentially infinite) square grid. More precisely, a lattice is a graph whose
 nodes are coordinates in 2 dimensional Cartesian space, limited to $\{(x,y) \in
@@ -7,21 +10,19 @@ nodes are coordinates in 2 dimensional Cartesian space, limited to $\{(x,y) \in
 whose euclidean distance is exactly 1.
 
 By \textit{maze} we mean a space of contiguous positions (discrete or not) that 
-can be subdivided by walls in any fashion.
+can be subdivided by walls in any fashion. The environment, in the context of this method, is synonomous with the maze.
 
 The overall method we use for generating mazes can be described as follows:
 
 \begin{enumerate}
-	\item We first discover (hopefully) interesting
-		grammars, using an evolutionary algorithm.
-	\item We create lattices from grammars, each describing the overall
-		layout of a maze
+	\item We first discover interesting grammars that fit a criteria, using an evolutionary algorithm.
+	\item We create lattices from grammars by applying them recursively, each describing the overall layout of a maze
 	\item We create mazes from lattices. Each node in the lattice
 		corresponding to a fixed-size room in the maze, connected to
 		other blocks as described by the lattice.
 \end{enumerate}
 
-The three steps each involve numerous choices that can be tweaked in accordance
+The three steps each involve multiple variables that can be tweaked in accordance
 with with the type of maze one wishes to obtain.
 
 
