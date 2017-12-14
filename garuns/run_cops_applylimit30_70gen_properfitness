@@ -1,0 +1,186 @@
+fsharpc --debug:full SeqExtensions.fs OptionExtensions.fs Constants.fs Graph.fs NeighbourHood.fs Block.fsi Block.fs Lattice.fsi Lattice.fs StructureGraph.fs Evolution.fs GraphEvolve.fs Program.fs -o bin/program.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+mono --debug bin/program.exe
+﻿Fitness in generation 0: average -125.586121, median -125.586121, best -125.586121
+Fitness in generation 1: average -124.950715, median -125.586121, best -83.225733
+Fitness in generation 2: average -124.738913, median -125.586121, best -83.225733
+Fitness in generation 3: average -124.472973, median -125.586121, best -83.225733
+Fitness in generation 4: average -124.218567, median -125.586121, best -83.225733
+Fitness in generation 5: average -8222.932986, median -125.586121, best -83.225733
+Fitness in generation 6: average -123.389069, median -125.586121, best -83.225733
+Fitness in generation 7: average -124.651879, median -125.586121, best -83.225733
+Fitness in generation 8: average -3657.381898, median -125.586121, best -83.225733
+Fitness in generation 9: average -120.830805, median -125.586121, best -83.225733
+Fitness in generation 10: average -7189.862495, median -125.586121, best -83.225733
+Fitness in generation 11: average -116.562138, median -125.586121, best -83.225733
+Fitness in generation 12: average -106044.365333, median -125.586121, best -83.225733
+Fitness in generation 13: average -49278.338260, median -124.405969, best -83.225733
+Fitness in generation 14: average -3635.133789, median -108.597980, best -48.737471
+Fitness in generation 15: average -95.657726, median -84.859563, best -48.737471
+Fitness in generation 16: average -92.696530, median -83.225733, best -48.737471
+Fitness in generation 17: average -93.007983, median -83.225733, best -48.737471
+Fitness in generation 18: average -93.566362, median -83.225733, best -48.737471
+Fitness in generation 19: average -233.670416, median -83.225733, best -48.737471
+Fitness in generation 20: average -64896.952212, median -83.225733, best -48.737471
+Fitness in generation 21: average -90.959385, median -83.225733, best -48.737471
+Fitness in generation 22: average -90.835880, median -83.225733, best -48.737471
+Fitness in generation 23: average -90.638280, median -83.225733, best -48.737471
+Fitness in generation 24: average -90.042756, median -83.225733, best -48.737471
+Fitness in generation 25: average -3625.492101, median -83.225733, best -48.737471
+Fitness in generation 26: average -91.338970, median -83.225733, best -48.737471
+Fitness in generation 27: average -90.142830, median -83.225733, best -48.737471
+Fitness in generation 28: average -3625.933260, median -83.225733, best -48.737471
+Fitness in generation 29: average -3163.001450, median -83.225733, best -48.737471
+Fitness in generation 30: average -3624.344933, median -83.225733, best -48.737471
+Fitness in generation 31: average -89.917361, median -83.225733, best -48.737471
+Fitness in generation 32: average -87.510326, median -83.225733, best -48.737471
+Fitness in generation 33: average -97.852393, median -83.225733, best -48.737471
+Fitness in generation 34: average -84.662617, median -83.225733, best -48.737471
+Fitness in generation 35: average -83.322385, median -83.225733, best -44.442719
+Fitness in generation 36: average -99.997299, median -83.225733, best -44.442719
+Fitness in generation 37: average -86.251155, median -83.225733, best -35.962289
+Fitness in generation 38: average -3183.069506, median -63.611272, best -35.962289
+Fitness in generation 39: average -113.224031, median -59.862646, best -21.687299
+Fitness in generation 40: average -1065.234932, median -53.931727, best -21.687299
+Fitness in generation 41: average -79.305827, median -51.500193, best -21.687299
+Fitness in generation 42: average -72.219316, median -50.162289, best -15.267105
+Fitness in generation 43: average -107.019653, median -47.729185, best -15.267105
+Fitness in generation 44: average -55.879140, median -44.442719, best -15.267105
+Fitness in generation 45: average -52925.714211, median -44.442719, best -15.267105
+Fitness in generation 46: average -105630.095911, median -43.475310, best -15.267105
+Fitness in generation 47: average -52896.013126, median -35.962289, best -15.267105
+Fitness in generation 48: average -72.917039, median -33.066502, best -10.296495
+Fitness in generation 49: average -3588.599930, median -26.632315, best -10.296495
+Fitness in generation 50: average -11167.199082, median -23.317060, best -10.296495
+Fitness in generation 51: average -3741.015915, median -21.687299, best -10.296495
+Fitness in generation 52: average -61444.815136, median -21.687299, best -10.296495
+Fitness in generation 53: average -7869.951003, median -21.687299, best -10.296495
+Fitness in generation 54: average -11769.103745, median -21.687299, best -10.296495
+Fitness in generation 55: average -303.115855, median -19.933772, best -10.296495
+Fitness in generation 56: average -264.912065, median -17.246870, best -10.296495
+Fitness in generation 57: average -225.776886, median -15.267105, best -10.296495
+Fitness in generation 58: average -3653.056665, median -15.267105, best -10.296495
+Fitness in generation 59: average -4240.890022, median -15.267105, best -10.296495
+Fitness in generation 60: average -97.441636, median -15.267105, best -10.296495
+Fitness in generation 61: average -3995.077708, median -10.296495, best -10.296495
+Fitness in generation 62: average -56761.082273, median -10.296495, best -10.296495
+Fitness in generation 63: average -3722.368633, median -10.296495, best -10.296495
+Fitness in generation 64: average -7274.369650, median -10.296495, best -10.296495
+Fitness in generation 65: average -85.951793, median -10.296495, best -10.296495
+Fitness in generation 66: average -3723.966749, median -10.296495, best -10.296495
+Fitness in generation 67: average -3751.635524, median -10.296495, best -10.296495
+Fitness in generation 68: average -3641.633397, median -10.296495, best -10.296495
+Fitness in generation 69: average -60883.808798, median -10.296495, best -10.296495
+Fitness in generation 70: average -67922.140388, median -10.296495, best -10.296495
+Done
+            ┏━┓┏━┓
+            ┃    ┃
+            ┗ ┛┗ ┛
+         ┏━┓┏ ┓┏ ┓
+         ┃ ┃┃    ┃
+         ┗ ┛┗ ┛┗ ┛
+      ┏━┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+      ┏ ┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+┏━┓┏━┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃          ┃┃    ┃
+┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃ ┃┃       ┃┃    ┃
+┗━┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+   ┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+   ┃       ┃┃    ┃
+   ┗━┛┗━┛┗━┛┗━┛┗━┛
+-------------------------
+            ┏━┓┏━┓
+            ┃    ┃
+            ┗ ┛┗ ┛
+         ┏━┓┏ ┓┏ ┓
+         ┃ ┃┃    ┃
+         ┗ ┛┗ ┛┗ ┛
+      ┏━┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+      ┏ ┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+┏━┓┏━┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃          ┃┃    ┃
+┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃ ┃┃       ┃┃    ┃
+┗━┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+   ┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+   ┃       ┃┃    ┃
+   ┗━┛┗━┛┗━┛┗━┛┗━┛
+-------------------------
+            ┏━┓┏━┓
+            ┃    ┃
+            ┗ ┛┗ ┛
+         ┏━┓┏ ┓┏ ┓
+         ┃ ┃┃    ┃
+         ┗ ┛┗ ┛┗ ┛
+      ┏━┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+      ┏ ┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+┏━┓┏━┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃          ┃┃    ┃
+┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃ ┃┃       ┃┃    ┃
+┗━┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+   ┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+   ┃       ┃┃    ┃
+   ┗━┛┗━┛┗━┛┗━┛┗━┛
+-------------------------
+            ┏━┓┏━┓
+            ┃    ┃
+            ┗ ┛┗ ┛
+         ┏━┓┏ ┓┏ ┓
+         ┃ ┃┃    ┃
+         ┗ ┛┗ ┛┗ ┛
+      ┏━┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+      ┏ ┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+┏━┓┏━┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃          ┃┃    ┃
+┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃ ┃┃       ┃┃    ┃
+┗━┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+   ┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+   ┃       ┃┃    ┃
+   ┗━┛┗━┛┗━┛┗━┛┗━┛
+-------------------------
+            ┏━┓┏━┓
+            ┃    ┃
+            ┗ ┛┗ ┛
+         ┏━┓┏ ┓┏ ┓
+         ┃ ┃┃    ┃
+         ┗ ┛┗ ┛┗ ┛
+      ┏━┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+      ┏ ┓┏ ┓┏ ┓┏ ┓
+      ┃    ┃┃    ┃
+      ┗ ┛┗ ┛┗ ┛┗ ┛
+┏━┓┏━┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃          ┃┃    ┃
+┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+┃ ┃┃       ┃┃    ┃
+┗━┛┗ ┛┗ ┛┗ ┛┗ ┛┗ ┛
+   ┏ ┓┏ ┓┏ ┓┏ ┓┏ ┓
+   ┃       ┃┃    ┃
+   ┗━┛┗━┛┗━┛┗━┛┗━┛
+-------------------------

@@ -1,0 +1,429 @@
+mono --debug bin/program.exe
+﻿Fitness in generation 0: average -115.655340, median -115.655340, best -115.655340
+Fitness in generation 1: average NaN, median -115.655340, best -115.655340
+Fitness in generation 2: average NaN, median -115.655340, best -115.655340
+Fitness in generation 3: average -115.106979, median -115.655340, best -79.097980
+Fitness in generation 4: average NaN, median -115.655340, best -4.508415
+Fitness in generation 5: average NaN, median -115.655340, best -4.508415
+Fitness in generation 6: average NaN, median -115.655340, best -4.508415
+Fitness in generation 7: average NaN, median -115.655340, best -4.508415
+Fitness in generation 8: average NaN, median -115.655340, best -4.508415
+Fitness in generation 9: average NaN, median -88.729664, best -4.508415
+Fitness in generation 10: average NaN, median -72.562082, best -4.508415
+Fitness in generation 11: average NaN, median -64.963519, best -4.508415
+Fitness in generation 12: average NaN, median -58.073665, best -4.508415
+Fitness in generation 13: average -65.500334, median -53.823244, best -4.508415
+Fitness in generation 14: average NaN, median -50.593223, best -4.508415
+Fitness in generation 15: average NaN, median -47.081956, best -4.508415
+Fitness in generation 16: average NaN, median -42.236666, best -4.508415
+Fitness in generation 17: average NaN, median -36.264252, best -4.508415
+Fitness in generation 18: average NaN, median -31.439744, best -4.508415
+Fitness in generation 19: average NaN, median -6.198297, best -4.508415
+Fitness in generation 20: average NaN, median -6.198297, best -4.508415
+Fitness in generation 21: average NaN, median -4.508415, best -4.508415
+Fitness in generation 22: average NaN, median -4.508415, best -4.508415
+Fitness in generation 23: average NaN, median -4.508415, best -4.508415
+Fitness in generation 24: average NaN, median -4.508415, best -4.508415
+Fitness in generation 25: average NaN, median -4.508415, best -4.508415
+Fitness in generation 26: average NaN, median -4.508415, best -4.508415
+Fitness in generation 27: average NaN, median -4.508415, best -4.508415
+Fitness in generation 28: average NaN, median -4.508415, best -4.508415
+Fitness in generation 29: average NaN, median -4.508415, best -4.508415
+Fitness in generation 30: average NaN, median -4.508415, best -4.508415
+Fitness in generation 31: average NaN, median -4.508415, best -0.972736
+Fitness in generation 32: average NaN, median -4.508415, best -0.972736
+Fitness in generation 33: average NaN, median -4.508415, best -0.972736
+Fitness in generation 34: average NaN, median -4.508415, best -0.972736
+Fitness in generation 35: average NaN, median -4.508415, best -0.972736
+Fitness in generation 36: average NaN, median -4.508415, best -0.972736
+Fitness in generation 37: average NaN, median -4.508415, best -0.205108
+Fitness in generation 38: average -16.773058, median -4.508415, best 0.354138
+Fitness in generation 39: average NaN, median -4.508415, best 0.354138
+Fitness in generation 40: average NaN, median -4.508415, best 0.354138
+Fitness in generation 41: average NaN, median -4.508415, best 0.354138
+Fitness in generation 42: average NaN, median -4.508415, best 0.354138
+Fitness in generation 43: average NaN, median -0.972736, best 0.354138
+Fitness in generation 44: average NaN, median -0.972736, best 1.963712
+Fitness in generation 45: average NaN, median -0.972736, best 1.963712
+Fitness in generation 46: average NaN, median -0.205108, best 1.963712
+Fitness in generation 47: average NaN, median -0.205108, best 1.963712
+Fitness in generation 48: average NaN, median -0.205108, best 1.963712
+Fitness in generation 49: average NaN, median 0.354138, best 1.963712
+Fitness in generation 50: average NaN, median 0.354138, best 1.963712
+Fitness in generation 51: average NaN, median 0.354138, best 1.963712
+Fitness in generation 52: average NaN, median 0.503261, best 1.963712
+Fitness in generation 53: average NaN, median 0.503261, best 1.963712
+Fitness in generation 54: average NaN, median 1.963712, best 1.963712
+Fitness in generation 55: average NaN, median 1.963712, best 1.963712
+Fitness in generation 56: average NaN, median 1.963712, best 1.963712
+Fitness in generation 57: average NaN, median 1.963712, best 1.963712
+Fitness in generation 58: average -11.256308, median 1.963712, best 1.963712
+Fitness in generation 59: average NaN, median 1.963712, best 1.963712
+Fitness in generation 60: average NaN, median 1.963712, best 1.963712
+Fitness in generation 61: average NaN, median 1.963712, best 1.963712
+Fitness in generation 62: average NaN, median 1.963712, best 1.963712
+Fitness in generation 63: average NaN, median 1.963712, best 1.963712
+Fitness in generation 64: average NaN, median 1.963712, best 1.963712
+Fitness in generation 65: average NaN, median 1.963712, best 1.963712
+Fitness in generation 66: average NaN, median 1.963712, best 1.963712
+Fitness in generation 67: average NaN, median 1.963712, best 1.963712
+Fitness in generation 68: average NaN, median 1.963712, best 1.963712
+Fitness in generation 69: average NaN, median 1.963712, best 1.963712
+Fitness in generation 70: average NaN, median 1.963712, best 1.963712
+Done
+                                 ┏━┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+                                 ┏ ┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+   ┏━┓                           ┏ ┓      
+   ┃ ┃                           ┃ ┃      
+   ┗ ┛                           ┗━┛      
+┏━┓┏ ┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓
+┃    ┃┃                                  ┃
+┗━┛┗ ┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛
+   ┏ ┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛      
+   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛      
+-------------------------
+                                 ┏━┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+                                 ┏ ┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+   ┏━┓                           ┏ ┓      
+   ┃ ┃                           ┃ ┃      
+   ┗ ┛                           ┗━┛      
+┏━┓┏ ┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓
+┃    ┃┃                                  ┃
+┗━┛┗ ┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛
+   ┏ ┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛      
+   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛      
+-------------------------
+                                 ┏━┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+                                 ┏ ┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+   ┏━┓                           ┏ ┓      
+   ┃ ┃                           ┃ ┃      
+   ┗ ┛                           ┗━┛      
+┏━┓┏ ┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓
+┃    ┃┃                                  ┃
+┗━┛┗ ┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛
+   ┏ ┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛      
+   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛      
+-------------------------
+                                 ┏━┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+                                 ┏ ┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+   ┏━┓                           ┏ ┓      
+   ┃ ┃                           ┃ ┃      
+   ┗ ┛                           ┗━┛      
+┏━┓┏ ┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓
+┃    ┃┃                                  ┃
+┗━┛┗ ┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛
+   ┏ ┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛      
+   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛      
+-------------------------
+                                 ┏━┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+                                 ┏ ┓      
+                                 ┃ ┃      
+                                 ┗ ┛      
+   ┏━┓                           ┏ ┓      
+   ┃ ┃                           ┃ ┃      
+   ┗ ┛                           ┗━┛      
+┏━┓┏ ┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓┏━┓
+┃    ┃┃                                  ┃
+┗━┛┗ ┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛┗━┛
+   ┏ ┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓   ┏━┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛   ┗ ┛      
+   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓   ┏ ┓      
+   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃   ┃ ┃      
+   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛   ┗━┛      
+-------------------------
+fsharpc --debug:full SeqExtensions.fs OptionExtensions.fs Constants.fs Graph.fs NeighbourHood.fs Block.fsi Block.fs Lattice.fsi Lattice.fs StructureGraph.fs Evolution.fs GraphEvolve.fs Program.fs -o bin/program.exe
+Microsoft (R) F# Compiler version 4.1
+Copyright (c) Microsoft Corporation. All Rights Reserved.
+mono --debug bin/program.exe
+﻿Fitness in generation 0: average -115.655340, median -115.655340, best -115.655340
+Fitness in generation 1: average NaN, median -115.655340, best -115.655340
+Fitness in generation 2: average NaN, median -115.655340, best -115.655340
+Fitness in generation 3: average NaN, median -115.655340, best -4.508415
+Fitness in generation 4: average NaN, median -115.655340, best -4.508415
+Fitness in generation 5: average NaN, median -115.655340, best -4.508415
+Fitness in generation 6: average NaN, median -115.655340, best -4.508415
+Fitness in generation 7: average NaN, median -115.655340, best -4.508415
+Fitness in generation 8: average NaN, median -115.655340, best -4.508415
+Fitness in generation 9: average NaN, median -115.655340, best -4.508415
+Fitness in generation 10: average NaN, median -115.655340, best -4.508415
+Fitness in generation 11: average NaN, median -90.023530, best -4.508415
+Fitness in generation 12: average NaN, median -69.200203, best -4.508415
+Fitness in generation 13: average NaN, median -63.733492, best -4.508415
+Fitness in generation 14: average NaN, median -57.363588, best -4.508415
+Fitness in generation 15: average NaN, median -50.402551, best -4.508415
+Fitness in generation 16: average NaN, median -45.304575, best 1.953911
+Fitness in generation 17: average NaN, median -40.698716, best 1.953911
+Fitness in generation 18: average NaN, median -34.461498, best 1.953911
+Fitness in generation 19: average NaN, median -28.648498, best 1.953911
+Fitness in generation 20: average NaN, median -6.198297, best 1.953911
+Fitness in generation 21: average NaN, median -4.508415, best 1.953911
+Fitness in generation 22: average NaN, median -4.508415, best 1.953911
+Fitness in generation 23: average NaN, median -4.508415, best 1.953911
+Fitness in generation 24: average NaN, median -4.508415, best 1.953911
+Fitness in generation 25: average NaN, median -4.508415, best 1.953911
+Fitness in generation 26: average NaN, median -4.508415, best 1.953911
+Fitness in generation 27: average NaN, median -4.508415, best 1.953911
+Fitness in generation 28: average NaN, median -4.508415, best 1.953911
+Fitness in generation 29: average NaN, median -4.508415, best 1.953911
+Fitness in generation 30: average NaN, median -4.508415, best 1.953911
+Fitness in generation 31: average NaN, median -4.508415, best 1.995327
+Fitness in generation 32: average NaN, median -4.508415, best 2.839400
+Fitness in generation 33: average NaN, median -4.508415, best 4.537711
+Fitness in generation 34: average NaN, median -2.710042, best 5.953911
+Fitness in generation 35: average NaN, median -0.224434, best 6.422074
+Fitness in generation 36: average NaN, median 1.108973, best 6.422074
+Fitness in generation 37: average NaN, median 1.640274, best 6.422074
+Fitness in generation 38: average NaN, median 1.953911, best 6.422074
+Fitness in generation 39: average NaN, median 1.953911, best 6.422074
+Fitness in generation 40: average NaN, median 1.953911, best 6.422074
+Fitness in generation 41: average NaN, median 1.953911, best 6.422074
+Fitness in generation 42: average NaN, median 1.953911, best 6.422074
+Fitness in generation 43: average NaN, median 1.953911, best 6.422074
+Fitness in generation 44: average NaN, median 1.953911, best 6.422074
+Fitness in generation 45: average NaN, median 1.995327, best 6.422074
+Fitness in generation 46: average NaN, median 1.995327, best 6.422074
+Fitness in generation 47: average NaN, median 3.839400, best 6.422074
+Fitness in generation 48: average NaN, median 5.007021, best 6.422074
+Fitness in generation 49: average NaN, median 5.953911, best 6.422074
+Fitness in generation 50: average NaN, median 5.953911, best 6.422074
+Fitness in generation 51: average NaN, median 5.953911, best 6.422074
+Fitness in generation 52: average NaN, median 6.279953, best 6.422074
+Fitness in generation 53: average -13.646838, median 6.279953, best 6.422074
+Fitness in generation 54: average NaN, median 6.422074, best 6.422074
+Fitness in generation 55: average NaN, median 6.422074, best 6.422074
+Fitness in generation 56: average NaN, median 6.422074, best 6.422074
+Fitness in generation 57: average NaN, median 6.422074, best 6.422074
+Fitness in generation 58: average NaN, median 6.422074, best 6.422074
+Fitness in generation 59: average NaN, median 6.422074, best 6.422074
+Fitness in generation 60: average NaN, median 6.422074, best 6.422074
+Fitness in generation 61: average NaN, median 6.422074, best 6.422074
+Fitness in generation 62: average NaN, median 6.422074, best 6.422074
+Fitness in generation 63: average NaN, median 6.422074, best 6.422074
+Fitness in generation 64: average NaN, median 6.422074, best 6.422074
+Fitness in generation 65: average NaN, median 6.422074, best 6.422074
+Fitness in generation 66: average NaN, median 6.422074, best 6.422074
+Fitness in generation 67: average NaN, median 6.422074, best 6.422074
+Fitness in generation 68: average NaN, median 6.422074, best 6.422074
+Fitness in generation 69: average NaN, median 6.422074, best 6.422074
+Fitness in generation 70: average NaN, median 6.422074, best 6.422074
+Done
+   ┏━┓      
+   ┃ ┃      
+   ┗ ┛      
+┏━┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓┏━┓┏━┓
+┃ ┃┃ ┃┃    ┃
+┗━┛┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗━┛┗━┛┗━┛
+-------------------------
+   ┏━┓      
+   ┃ ┃      
+   ┗ ┛      
+┏━┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓┏━┓┏━┓
+┃ ┃┃ ┃┃    ┃
+┗━┛┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗━┛┗━┛┗━┛
+-------------------------
+   ┏━┓      
+   ┃ ┃      
+   ┗ ┛      
+┏━┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓      
+┃ ┃┃ ┃      
+┗ ┛┗ ┛      
+┏ ┓┏ ┓┏━┓┏━┓
+┃ ┃┃ ┃┃    ┃
+┗━┛┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃ ┃┃    ┃
+   ┗ ┛┗━┛┗━┛
+   ┏ ┓      
+   ┃ ┃      
+   ┗ ┛      
+   ┏ ┓┏━┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗ ┛┗ ┛┗━┛
+   ┏ ┓┏ ┓┏━┓
+   ┃       ┃
+   ┗━┛┗━┛┗━┛
+-------------------------
+               ┏━┓   ┏━┓┏━┓
+               ┃ ┃   ┃    ┃
+               ┗ ┛   ┗ ┛┗━┛
+            ┏━┓┏ ┓   ┏ ┓   
+            ┃ ┃┃ ┃   ┃ ┃   
+            ┗ ┛┗━┛   ┗━┛   
+         ┏━┓┏ ┓            
+         ┃ ┃┃ ┃            
+         ┗ ┛┗━┛            
+      ┏━┓┏ ┓      ┏━┓┏━┓   
+      ┃ ┃┃ ┃      ┃    ┃   
+      ┗ ┛┗━┛      ┗ ┛┗━┛   
+   ┏━┓┏ ┓      ┏━┓┏ ┓      
+   ┃ ┃┃ ┃      ┃    ┃      
+   ┗ ┛┗━┛      ┗ ┛┗━┛      
+┏━┓┏ ┓      ┏━┓┏ ┓         
+┃ ┃┃ ┃      ┃    ┃         
+┗ ┛┗━┛      ┗ ┛┗━┛         
+┏ ┓┏━┓   ┏━┓┏ ┓            
+┃    ┃   ┃    ┃            
+┗ ┛┗ ┛   ┗ ┛┗━┛            
+┏ ┓┏ ┓┏━┓┏ ┓               
+┃          ┃               
+┗ ┛┗ ┛┗ ┛┗━┛               
+┏ ┓┏ ┓┏ ┓                  
+┃       ┃                  
+┗━┛┗━┛┗━┛                  
+-------------------------
+               ┏━┓   ┏━┓┏━┓
+               ┃ ┃   ┃    ┃
+               ┗ ┛   ┗ ┛┗━┛
+            ┏━┓┏ ┓   ┏ ┓   
+            ┃ ┃┃ ┃   ┃ ┃   
+            ┗ ┛┗━┛   ┗━┛   
+         ┏━┓┏ ┓            
+         ┃ ┃┃ ┃            
+         ┗ ┛┗━┛            
+      ┏━┓┏ ┓      ┏━┓┏━┓   
+      ┃ ┃┃ ┃      ┃    ┃   
+      ┗ ┛┗━┛      ┗ ┛┗━┛   
+   ┏━┓┏ ┓      ┏━┓┏ ┓      
+   ┃ ┃┃ ┃      ┃    ┃      
+   ┗ ┛┗━┛      ┗ ┛┗━┛      
+┏━┓┏ ┓      ┏━┓┏ ┓         
+┃ ┃┃ ┃      ┃    ┃         
+┗ ┛┗━┛      ┗ ┛┗━┛         
+┏ ┓┏━┓   ┏━┓┏ ┓            
+┃    ┃   ┃    ┃            
+┗ ┛┗ ┛   ┗ ┛┗━┛            
+┏ ┓┏ ┓┏━┓┏ ┓               
+┃          ┃               
+┗ ┛┗ ┛┗ ┛┗━┛               
+┏ ┓┏ ┓┏ ┓                  
+┃       ┃                  
+┗━┛┗━┛┗━┛                  
+-------------------------

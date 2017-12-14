@@ -2,6 +2,14 @@
 %6. Discussion
 %What are the strengths and shortcomings of your method? Why did you choose method X instead of Y? How well would it generalize to other game genres? How would you develop it further, if you had time?
 
+One surprise in this project is how easily the evolutionary algorithm finds
+interesting lattices. Given that both the geno- and pheno-type are graph-like
+structures, we expected that we would need to solve at least some of the
+problems described in "Evolving neural networks
+through augmenting topologies"\cite{stanley:ec02}. Stanley and Miikulainen
+describe several problems that occur when evolving topologies (they are
+concerned with neural networks, whereas we work with lattices as unweighted
+graphs)
 
 \subsection{Blocks}
 In the algorithm we have left the option to a block for each node in the lattice. A block is like a room and is itself a lattice, that describes the layout of the room. While the blocks have a huge impact on gameplay, we decided to not develop them further or include them in the overall algorithm.
