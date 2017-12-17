@@ -63,7 +63,7 @@ The matching of a rule on a lattice might be implemented without rotation.
 Without rotation in the matching process, the choice is deferred to the grammar,
 which may or may not include different rotations of a rule. Intuitively,
 including rotation in the matching process makes grammars less expressive, but
-may help cause self-similarities in the resulting lattice. In practice, the
+may help cause repetition in the resulting lattice. In practice, the
 effect is not entirely obvious, and is tied to the method used to discover
 grammars.
 
@@ -77,6 +77,12 @@ application. Alternatively, rules could be matched, and then applied together in
 a single step. Furthermore, rules may be applied once, or once for each match.
 Yet another approach could be to apply each rule repeatedly, continuing to the
 next rule only when the first can't be matched to it's own result anymore.
+
+In our evolutionary experiments (described in later sections), rules are applied
+once upon a match, and in succession. We started out with a limit of 200
+applications for each grammar, but settled on limit of 30. This limit
+significantly affects performance, but seems to have little effect on the
+resulting mazes in the context of the evolutionary algorithm.
 
 \subsection{Block generation}
 
@@ -157,11 +163,11 @@ $$-\left| 50 * \left(0.05 - \frac{culdesacs}{size}\right)\right|$$
 $$-\left| 3 - \max culdesaclength \right|$$
 
 For a lattice, where $size$ is the number of nodes, $pitfalls$ is the number of
-pitfall nodes (as defined previously), $medianDistance$ is the median of all
-node distances, and $\max culdesaclength$ is the length of the longest path
-on a cul de sac.
+pitfall nodes (as defined previously), $area$ is the area of the lattice's
+minimum bounding box, $medianDistance$ is the median of all node distances, and
+$\max culdesaclength$ is the length of the longest path on a cul de sac.
 
-Where necessary, $0$ is substituted for terms resulting in division with $0$.
+Where necessary, $0$ is substituted for terms resulting in division by $0$.
 
 \subsubsection{Dungeon Crawlers}
 For games in the Dungeon Crawler category, we try to evolve grammars that are
@@ -180,9 +186,11 @@ Where $treeLength^\prime$ is the median size of trees, $culdesaclength^\prime$
 is the median length of cul de sacs, and $avgDegree$ is the average number of
 connected neighbours a node has.
 
-A tree is defined as a sub graph with no cycles, where all nodes have at most 2
-connected neighbours, with the exception for one node, considered to be the root of three.
+Trees are found by taking all cul de sacs, and walking from their ends until a
+node with more than two neighbours is found, which is then considered the root.
+cul de sacs are merged into trees when they share a root, and if -- after
+merging -- the root has a single non-child neighbour, the walk continues.
 
 $trees$ is the number of such trees.
 
-Where necessary, $0$ is substituted for terms resulting in division with $0$.
+Where necessary, $0$ is substituted for terms resulting in division by $0$.
