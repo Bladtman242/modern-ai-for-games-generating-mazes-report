@@ -3,17 +3,32 @@
 %What are the strengths and shortcomings of your method? Why did you choose method X instead of Y? How well would it generalize to other game genres? How would you develop it further, if you had time?
 
 The evolutionary algorithm finds grammars for interesting lattices surprisingly
-fast and reliably. Given that both the gene- and phenotype are graph-like
-structures, we expected that we would need to solve at least some of the
+fast and reliably. We expected that we would need to solve at least some of the
 problems described in "Evolving neural networks through augmenting
-topologies"\cite{stanley:ec02}. Stanley and Miikulainen describe several issues
-that occur when evolving topologies (they are concerned with neural networks,
-whereas we work with lattices as unweighted graphs). The evolutionary algorithm
-used by our implementation is fundamental, so we would have expected more
-problems, such as the algorithm merely getting stuck before finding a good
-solution or producing very chaotic results.
+topologies"\cite{stanley:ec02}, given that both the gene- and phenotype are
+graph-like structures. Stanley and Miikulainen describe several issues that
+occur when evolving topologies (they are concerned with neural networks,
+whereas we work with lattices as unweighted graphs). We expected problems to
+arise from lack of diversity since we do nothing to protect innovation.
+We also expected to get problems from competing conventions in the phenomes, as
+any grammar rule can exist in 4 versions (each rotated by 90 degrees), each version
+giving the exact same results.
 
-PARAGRAPH ON MORE EVOLUTION
+The experiments may well have suffered from those problems. They could explain
+the early stagnation of the fitness over time, and the high degree of
+similarity in the final populations. However, as the mazes we found fit our
+wishes and so it seems the method is viable even with these problems in the
+evolutionary algorithm.
+
+It is possible that the use of non-mating offspring generation mitigates some
+of the problems. Competing conventions will not result in lost expressiveness
+in offspring without crossover. Competing conventions may still lessen the
+expressiveness of the population as a whole. As for protecting innovation, we
+saw high diversity between different runs of the experiment. This makes sense
+given that the size of the grammar-space grows quickly in the number of
+mutations. It seems then, that using speciation might help preserve diversity.
+A different route entirely would be to use novelty search instead, explicitly
+optimizing for diverse populations.
 
 %\subsection{Blocks}
 
