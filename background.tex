@@ -5,40 +5,40 @@ This section provides an overview of the existing methods on which our approach 
 
 \subsection{Maze Definition}
 
-The lattice grammars work on a very specific type of graph based maze. For the purpose of this paper we define two types of maze definitions: block-based mazes and wall-based mazes.
+The lattice grammars work only on a particular type of graph-based maze. For this paper, we define two types of maze definitions: block-based mazes and wall-based mazes.
 
-Block-based mazes are arrays of cells, which are either walls or not. All the non-wall cells are typically traversible, so a graph of the level would be defined where each cell is a node which has edges to its neighboring cells that are not walls.
+Block-based mazes are arrays of cells, which are either wall or not. All the non-wall cells are typically traversable, so a graph of the level would be defined where each cell is a node which has edges to its neighboring cells that are not walls.
 
-Wall-based mazes look like an array of cells, but rather than the walls taking up an entire cell, they are between each cell. Cells no longer have a state, so the maze is defined as an array of cells, and a set of walls between them.
+Wall-based mazes look like an array of cells, but rather than the walls taking up an entire cell, they are between each cell. Cells no longer have a state, so the maze is defined as an array of cells and a set of walls between them.
 
-The lattice grammars work on wall-based mazes, because it is based on graph grammars and the wall-based mazes are defined similarly to graphs. The two are therefore a natural fit.
+The lattice grammars work on wall-based mazes because it is based on graph grammars and the wall-based mazes are defined similarly to graphs. The two are therefore a natural fit.
 
 \subsection{L-Systems}
 
-L-systems are a method with a broad range of applications. It was first concieved to model simple cells, but is commonly used for trees and plants. They are formally defined as a tuple including the alphabet, the initial state, and the set of rules that can be applied. Rules are then defined as a tuple of three things; a predecessor, a condition, and a successor \cite{Prusinkiewicz96l-systems:from}. In short you iteratively apply the rules to the state, by replacing the predecessor with the succesor when the condition is met.
+L-systems are a method with a broad range of applications. It was first conceived to model simple cells but is commonly used for trees and plants. They are formally defined as a tuple including the alphabet, the initial state, and the set of rules that can be applied. Rules are then defined as a tuple of three things; a predecessor, a condition, and a successor \cite{Prusinkiewicz96l-systems:from}. In short, you iteratively apply the rules to the state, by replacing the predecessor with the successor when the condition is met.
 
-The lattice grammars work similarly to this, but are by nature restricted in their alphabet. The most essential difference is that rather than applying rules to strings, they apply them to a lattice. Additionally rules are applied arbitrarily one by one. These two differences allow us to model more variety, because we are not restricted to a tree structure. By picking rules pseudo-randomly there are more possible results, as the order in which rules are applied matter.
+The lattice grammars work similarly to this but are by nature restricted in their alphabet. An essential difference is that rather than applying rules to strings, they apply them to a lattice. Additionally, rules are applied arbitrarily one by one. These two differences allow us to model more variety because we are not restricted to a tree structure. By picking rules pseudo-randomly, there are more possible results, as the order in which rules are applied matter.
 
 \subsection{Graph Grammars}
 
-Because the lattice is treated like a graph rather than a string, the lattice grammars are very related to graph grammars.
+Because the lattice is treated as a graph rather than a string, the lattice grammars are very related to graph grammars.
 
-Graph grammars are defined similarly to L-Systems as an alphabet, but this this time of labels, an initial state, and a set of productions \cite{4569741}. In practice, productions work similarly to rules in L-Systems, but can both add and remove edges and nodes from a graph.
+Graph grammars are defined similarly to L-Systems as an alphabet, but this time of labels, an initial state, and a set of productions \cite{4569741}. In practice, productions work similarly to rules in L-Systems, but can both add and remove edges and nodes from a graph.
 
-Graph grammars are a powerful tool for generating environments \cite{79GraphG75:online, shaker2016procedural}, but they lack a sense of space, and so need an additional step to layout the nodes and transform them into what they really represent. The lattice grammars are layed out in a lattice by nature and so generate the environment based on its spatial representation rather than just its symbols.
+Graph grammars are a powerful tool for generating environments \cite{79GraphG75:online, shaker2016procedural}, but they lack a sense of space, and so need an additional step to layout the nodes and transform them into what they represent. The lattice grammars are laid out in a lattice by nature and thus generate the environment based on its spatial representation rather than just its symbols.
 
-Lattice grammars do however lack the strucural expressiveness of graph grammars. When using graph grammars, they are commonly used to generate only the symbolic structure of the environment, as in how everything connects to each other. Lattice grammars loose this broad overview, although it could possibly still exist with the set of rules.
+Lattice grammars do however lack the structural expressiveness of graph grammars. When using graph grammars, they are commonly used to generate only the symbolic structure of the environment, as in how everything connects to each other. Lattice grammars lose this broad overview, although it could still exist with the set of rules.
 
 
 \subsection{Cellular Automata}
 
-Tying lattice grammars to the space makes them related to cellular automata. Cellular automata are a simple mathematical construct that works on an array or lattice of cell that can be in either of two states \cite{WOLFRAM19841}. The rules that transform the states change the state of each cell depending on the state of neighbouring cells. The rules can be defined for each pattern of neighbors, but a definition where simply the count of the neighboring states determines the new state of the cell has been popularized by Conway's Game of Life \cite{gardner1970mathematical}.
+Tying lattice grammars to space make them related to cellular automata. Cellular automata are a simple mathematical construct that works on an array or lattice of cell that can be in either of two states \cite{WOLFRAM19841}. The rules that transform the states change the state of each cell depending on the state of neighboring cells. The rules can be defined for each pattern of neighbors, but a definition where merely the count of the neighboring states determines the new state of the cell has been popularized by Conway's Game of Life \cite{gardner1970mathematical}.
 
-Unlike cellular automata, lattice grammars do not apply rules based on just neighbors but on larger patterns in the graph, and the rules are applied one by one, rather than all at once in each iteration. Similarly to cellular automata, lattice grammars uses the specific position of neighbors to generate the new state of the environment. Simple rules can also create chaotic and unpredictable results, if not controlled by another mechanism.
+Unlike cellular automata, lattice grammars do not apply rules based on just neighbors, but larger patterns in the graph and the rules are applied one by one, rather than all at once in each iteration. Similarly to cellular automata, lattice grammars use the specific position of neighbors to generate the new state of the environment. Simple rules can also create chaotic and unpredictable results, if not controlled by another mechanism.
 
 \subsection{Evolution}
 
-On top of the rule application algorithm, we use an evolutionary algorithm to generate rules that generate environments that fit certain criteria. This is to alleviate some of the problems that comes from the algorithm, that were mentioned briefly in the earlier sections.
+On top of the rule application algorithm, we use an evolutionary algorithm to generate rules that generate environments that fit specific criteria. This is to alleviate some of the problems that come with the algorithm, which were mentioned briefly in the earlier sections.
 
 An basic evolutionary algorithm works in a few simple steps \cite{holland1975adaptation}:
 \begin{itemize}
@@ -52,39 +52,39 @@ An basic evolutionary algorithm works in a few simple steps \cite{holland1975ada
 \end{itemize}
 \end{itemize}
 
-It is desireable to be able to control the overall structure of the environment, but the rules needed to for this level of control can be complicated to design with the introduction of spatial restrictions. 
-The evolutionary algorithm may then generate the rules procedurally as long as a criteria can be defined to evaluate the environment.
+It is desirable to be able to control the overall structure of the environment, but the rules needed to for this level of control can be complicated to design with the introduction of spatial restrictions. 
+The evolutionary algorithm may then generate the rules procedurally as long as criteria can be defined to evaluate the environment.
 
-This can also solve the problem with chaotic results, because limits can be applied and we can define a criteria that the environment should be of a certain size, which will constrain the algorithm, while it can still generate interesting patterns.
+This can also solve the problem with chaotic results because limits can be applied and we can define criteria that the environment should be of a certain size, which will constrain the algorithm, while it can still generate interesting patterns.
 
 The challenge for the designer then becomes to define the criteria that the evolutionary algorithm will generate environments based on.
 
 \subsection{Graph Theory}
 
-The environment that the algorithm produces is defined as a graph, so we based our basic criteria on graph theory. Not all of these are necesarily used, but rather depend on the specific style of environment that should be generated.
+The environment that the algorithm produces is defined as a graph, so we based our basic criteria on graph theory. Not all of these are necessarily used, but instead depend on the specific style of environment that should be generated.
 
-The most basic metrics that we extract are the cardinality of the graph, which allow us to directly specify the size of the environment, and the average degree of the nodes, which allow us to evaluate how tightly connected the graph should be.
+The most basic metrics that we extract are the cardinality of the graph, which allows us to directly specify the size of the environment, and the average degree of the nodes, which will enable us to evaluate how tightly connected the graph should be.
 
 \subsubsection{Cycles and trees}
 
-The metric that may have the most impact on overall structure are the number of cycles, and inversely the subtrees that are the parts of the graph not in any cycle.
+The metric that may have the most impact on the overall structure is the number of cycles, and inversely the subtrees that are the parts of the graph not in any cycle.
 
-Fewer cycles will result in more nodes being branches in the environment, which can either be desirable or not depending on the game design. It is worth noting that no cycles can result in backtracking and also leaves no escape if the game involves getting chase.
+Fewer cycles will result in more nodes being branches in the environment, which can either be desirable or not depend on the game design. It is worth noting that no cycles can result in backtracking and also leaves no escape if the game involves getting chased.
 
-The branches of level are usually a key part of the level design, where keys or puzzles are placed at the end of. Exception exists, such as Pacman, which level exist entirely of cycles. We also want to distinquish between the individual dead ends and the entire subtree which the player can perceive as a dead end as a whole. Each individual dead end is a tree with no branches and one leaf node. These can also be referred to as cul-de-sacs.
+The branches of level are usually a vital part of the level design, where keys or puzzles are placed at the end of. Exceptions exist, such as Pacman, which level exist entirely in cycles. We also want to distinguish between the individual dead ends and the entire subtree which the player can perceive as a dead end as a whole. Each dead end is a tree with no branches and one leaf node. These can also be referred to as cul-de-sacs.
 
 \subsubsection{Cops and Robbers Graphs}
 
-To further describe the connectivity of the environment we base another criteria on a theorem M. Aigner and M. Fromme \cite{AIGNER19841}, which involves a game of one agent chasing another. In short any graph can be reduced to determine whether or not one agent can catch another by moving along edges in a non-weighted graph, by removing nodes that are pitfalls.
+To further describe the connectivity of the environment we base another criterion on a theorem M. Aigner and M. Fromme \cite{AIGNER19841}, which involves a game of one agent chasing another. In short, any graph can be reduced to determine whether or not one agent can catch another by moving along edges in a non-weighted graph, by removing nodes that are pitfalls.
 
 Pitfalls are nodes where all the neighboring nodes are connected to any other single node, referred to as an attack node. If the chaser is standing on the attack node and the chasee is standing on the pitfall, the chaser can catch the chasee. 
 
-Counting these pitfalls are then a useful metric in determining how easily you can traverse the enviroment.
+Counting these pitfalls is then a useful metric in determining how easily you can traverse the environment.
 
 \subsection{Spelunky}
 
-The final point of inspiration for the method is from the game "Spelunky". In his book, of the same name, on the development of the game, the creator, Derek Yu, describes in detail the underlying algorithm that generates the levels \cite{yu2016spelunky}. 
+The final point of inspiration for the method is from the game "Spelunky." In his book, of the same name, on the development of the game, the creator, Derek Yu, describes in detail the underlying algorithm that generates the levels \cite{yu2016spelunky}. 
 
-Each level is composed of a 4 by 4 grid of "rooms", which in turn are made of tiles. To generate a level, two room positions are picked for an entrance and exit, and a path is drawn randomly between them. Any rooms not on the path are optional. To fill the level, each room is picked from a set of premade templates, such that the exits of the room match the path on which it is placed.
+Each level is composed of a four by 4 grid of "rooms," which in turn are made of tiles. To generate a level, two-room positions are picked for an entrance and exit, and a path is drawn randomly between them. Any rooms not on the path are optional. To fill the level, each room is picked from a set of premade templates, such that the exits of the room match the path on which it is placed.
 
 This separation of the overall structure of the level and the detail of each room results in a great mix of authored- and procedural content. A similar approach can be used in conjunction with graph- or lattice grammars, to fill in the details that are not important to the overall structure of the environment \cite{79GraphG75:online}.
