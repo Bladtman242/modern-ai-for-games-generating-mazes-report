@@ -2,14 +2,30 @@
 %6. Discussion
 %What are the strengths and shortcomings of your method? Why did you choose method X instead of Y? How well would it generalize to other game genres? How would you develop it further, if you had time?
 
-The lattice grammars when paired with the evolutionary algorithm has a surprisingly easy time finding interesting lattices. Given that both the gene- and phenotype are graph-like structures, we expected that we would need to solve at least some of the problems described in "Evolving neural networks through augmenting topologies"\cite{stanley:ec02}. Stanley and Miikulainen describe several issues that occur when evolving topologies (they are concerned with neural networks, whereas we work with lattices as unweighted graphs). The evolutionary algorithm used by our implementation is fundamental, so we would have expected more problems, such as the algorithm merely getting stuck before finding a good solution or producing very chaotic results.
+The evolutionary algorithm finds grammars for interesting lattices surprisingly
+fast and reliably. Given that both the gene- and phenotype are graph-like
+structures, we expected that we would need to solve at least some of the
+problems described in "Evolving neural networks through augmenting
+topologies"\cite{stanley:ec02}. Stanley and Miikulainen describe several issues
+that occur when evolving topologies (they are concerned with neural networks,
+whereas we work with lattices as unweighted graphs). The evolutionary algorithm
+used by our implementation is fundamental, so we would have expected more
+problems, such as the algorithm merely getting stuck before finding a good
+solution or producing very chaotic results.
 
 PARAGRAPH ON MORE EVOLUTION
 
 %\subsection{Blocks}
 
-In the algorithm, we have left the option to a block for each node in the lattice. A block is like a room and is itself a lattice, which describes the layout of the room. While the blocks have a significant impact on gameplay, we decided not to develop them further or include them in the overall algorithm.
-The point of the project is to show of lattice-grammars and how well they work in conjunction with an evolutionary algorithm. The block level generation is not relevant to the results, but just serve to demonstrate how to mediate some of the problems that the overall algorithm can produce. We have therefore left the specific implementation of the blocks open for extensions and future work.
+In the algorithm, we have left the option to a block for each node in the
+lattice. A block is like a room and is itself a lattice, which describes the
+layout of the room. While the blocks have a significant impact on gameplay, we
+decided not to develop them further or include them in the overall algorithm.
+The point of the project is to show of lattice-grammars and how well they work
+in conjunction with an evolutionary algorithm. The block level generation is
+not relevant to the results, but just serve to demonstrate how to mediate some
+of the problems that the overall algorithm can produce. We have therefore left
+the specific implementation of the blocks open for extensions and future work.
 
 
 %\subsection{Further work}
