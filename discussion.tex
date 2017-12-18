@@ -4,6 +4,8 @@
 
 The lattice grammars when paired with the evolutionary algorithm has a surprisingly easy time finding interesting lattices. Given that both the geno- and pheno-type are graph-like structures, we expected that we would need to solve at least some of the problems described in "Evolving neural networks through augmenting topologies"\cite{stanley:ec02}. Stanley and Miikulainen describe several problems that occur when evolving topologies (they are concerned with neural networks, whereas we work with lattices as unweighted graphs). The evolutionary algorithm used by our implementation is very basic, so we would have expected more problems, such as the algorithm simply getting stuck before finding a good solution or producing very chaotic results.
 
+PARAGRAPH ON MORE EVOLUTION
+
 %\subsection{Blocks}
 
 In the algorithm we have left the option to a block for each node in the lattice. A block is like a room and is itself a lattice, that describes the layout of the room. While the blocks have a huge impact on gameplay, we decided to not develop them further or include them in the overall algorithm.
@@ -14,4 +16,4 @@ The point of the project is to show of lattice-grammars and how well they work i
 
 There are a lot of things to change or tweak on lattice grammars. They are not a full system by themselves, and, just like graph grammars, they it needs more systems to be applied in a game. For our implementation we chose to use blocks to allow for more in-depth maze generation, even if they were not used in the experiments. An extension that we did not add is node labels, which are almost essential to graph grammars to create a context for the algorithm to work with. With lattice grammars having a space to work in, that context wasn't necessary, so we left it out. Features like these leave great room for improvement to the system, and had we had more time, we could have used them to develop even more interesting mazes.
 
-
+In conclusion, lattice grammars turned out to be a viable solution for procedural generation of mazes. It has the flexibility of graph grammars and the spatial awareness of cellular automata, and combines the two elegantly. In the experiments it successfully generated mazes, that fit the criteria we wanted, although there is some room for improvements in terms of performance. It is in our opinion an algorithm worth considering for use in games with procedural levels of almost any kind.
