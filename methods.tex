@@ -92,8 +92,31 @@ Depending on the block-size, this stage of the generation can have a profound im
 
 To ensure that the blocks do not affect the overall level structure too much, the mock algorithm that we use simply removes walls randomly until every exit is connected. This should result in fairly connected room and guarantees that no parts of the environment is cut off unnecessarily.
 
-The blocks are in the algorithm do demonstrate the possibility of a system like what the game Spelunky uses \cite{yu2016spelunky}. A system like this allows the developer to generate the details of the environment independently from the overall structure, for example by authoring rooms manually and then assembling them to a level procedurally. The implementation here is just a mock-up and are not intended to have any effect on the result.
+The blocks are in the algorithm do demonstrate the possibility of a system like
+what the game Spelunky uses \cite{yu2016spelunky}. A system like this allows the
+developer to generate the details of the environment independently from the
+overall structure, for example by authoring rooms manually and then assembling
+them to a level procedurally. The implementation here is just a mock-up and are
+not intended to have any effect on the result.
 
+Blocks may also be seen as merely decorational, leaving the structure design to
+the lattice grammars and using block-level structure only for aesthetics.
+
+\begin{figure}[hbp]
+	\centering
+	\includegraphics[width=\columnwidth]{screenshots/blocks3.png}
+	\caption{Section of a maze with blocks generated at random, with exits
+	matchinmatching the lattice structure}
+	\label{fig:blocks}
+\end{figure}
+
+Figure \ref{fig:blocks} shows a section of a maze generated for the
+cops-and-robbers scenario, with $3\times3$ blocks. Even at this block size, the
+layout of individual blocks significantly affects how the maze layout is
+perceived. The block on the top-right is a good example of how block-level
+layout can change functional properties of the maze. At lattice-level, the block
+is a cul de sac, but the wall inside the block, and the fact that it has two
+exits to the same node, makes it a cycle.
 
 \subsection{Evolutionary algorithm}
 
